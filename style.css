@@ -1,0 +1,162 @@
+/* =====================================================
+   style.css
+   Ye ek file saare pages ka design control karti hai.
+   Har page mein hum isko <link> se jodte hain.
+   ===================================================== */
+
+
+/* ---------- 1. Poore page ka basic design ---------- */
+body {
+  font-family: Arial, sans-serif;   /* text ka font */
+  background-color: #eeeeee;        /* page ka background (halka grey) */
+  color: #333333;                   /* text ka rang (dark grey) */
+  margin: 0;                        /* page ke kinaron ki khali jagah hatao */
+}
+
+
+/* ---------- 2. Header (upar wali neeli patti) ---------- */
+header {
+  background-color: #1e3a8a;        /* neela rang */
+  color: white;                     /* text safed */
+  text-align: center;               /* text beech mein */
+  padding: 20px;                    /* andar se thori jagah */
+}
+
+
+/* ---------- 3. Navigation (menu ke links) ---------- */
+nav a {
+  color: white;                     /* link safed */
+  text-decoration: none;            /* link ke neeche ki line hatao */
+  margin: 0 8px;                    /* links ke beech jagah */
+  display: inline-block;            /* taake padding sahi lage */
+  padding: 6px 10px;
+}
+
+nav a:hover {
+  background-color: #3b82f6;        /* mouse upar lao to halka neela ho jaye */
+}
+
+
+/* ---------- 4. Main (page ka asal content) ---------- */
+main {
+  max-width: 800px;                 /* zyada chora nahi hoga */
+  margin: 20px auto;                /* upar neeche 20px, left right auto = beech mein */
+  padding: 20px;                    /* andar se jagah */
+  background-color: white;          /* safed dabba */
+}
+
+h2 {
+  color: #1e3a8a;                   /* heading neeli */
+}
+
+h3 {
+  color: #1e3a8a;
+}
+
+
+/* ---------- 5. Box (skills, projects, services, blog ke dabbe) ---------- */
+.box {
+  background-color: #e8eefb;        /* halka neela background */
+  padding: 15px;                    /* andar se jagah */
+  margin-bottom: 15px;              /* dabbon ke beech jagah */
+  border-left: 5px solid #1e3a8a;   /* left side par neeli patti */
+}
+
+
+/* ---------- 6. Home page ki photo ---------- */
+.profile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;               /* 50% = photo gol ban jati hai */
+  object-fit: cover;                /* photo kheenchti nahi */
+}
+
+.home {
+  text-align: center;               /* home page ka content beech mein */
+}
+
+
+/* ---------- 7. Button wale links ---------- */
+.button {
+  display: inline-block;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: #3b82f6;
+}
+
+
+/* ---------- 8. Table (Education page) ---------- */
+table {
+  width: 100%;                      /* poori chorai */
+  border-collapse: collapse;        /* lines milakar ek kar do */
+}
+
+th, td {
+  border: 1px solid #999999;        /* har box ki border */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #1e3a8a;        /* table ki pehli row neeli */
+  color: white;
+}
+
+
+/* ---------- 9. FAQ ke sawal ---------- */
+details {
+  background-color: #e8eefb;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;                /* sawal moti likhai mein */
+  cursor: pointer;                  /* mouse par haath ka nishan */
+}
+
+
+/* ---------- 10. Contact form ---------- */
+input, textarea {
+  width: 100%;                      /* poori chorai */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;           /* width mein padding bhi shamil */
+}
+
+button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b82f6;
+}
+
+
+/* ---------- 11. Footer (neeche wali patti) ---------- */
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* ---------- 12. Mobile ke liye ---------- */
+/* Agar screen choti ho (mobile), to ye rules lagte hain */
+@media (max-width: 600px) {
+  nav a {
+    display: block;                 /* links ek ke neeche ek aa jayen */
+  }
+}
